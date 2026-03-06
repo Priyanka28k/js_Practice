@@ -32,3 +32,26 @@ console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive)  --> copy
+// Heap (Non Primitive) --> reference
+
+let myName = "Priyanka"
+let anotherName = myName
+anotherName = "Sheetal"
+console.log(myName);
+console.log(anotherName);
+
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne
+userTwo.email = "priyanka@google.com"
+console.log(userOne);
+console.log(userTwo);
